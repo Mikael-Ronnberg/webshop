@@ -48,8 +48,24 @@ html {
   padding: 0;
 }
 
-main {
+.main-container {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  li {
+    list-style: none;
+    cursor: pointer;
+  }
+}
+
+.sidebar-container {
+  width: 18vw;
+  border: 2px solid black;
+  font-size: 3em;
+}
+
+.content-window {
+  border: 2px solid black;
 }
 
 #product-container{
@@ -60,9 +76,11 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 2px solid black;
 }
 
 .product-object {
+  border: 2px solid black;
   width: 300px;
   height: 400px;
   display: flex;

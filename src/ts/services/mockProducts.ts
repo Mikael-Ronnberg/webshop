@@ -41,7 +41,49 @@ export let mockData: IProduct[] = [
     {
         Name: "Köttbullar",
         Img: "url",
+        Category: "Fisk",
+        Price: 50.90,
+        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+    },
+    {
+        Name: "Köttbullar",
+        Img: "url",
         Category: "Kött",
+        Price: 50.90,
+        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+    },
+    {
+        Name: "Köttbullar",
+        Img: "url",
+        Category: "Kött",
+        Price: 50.90,
+        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+    },
+    {
+        Name: "Köttbullar",
+        Img: "url",
+        Category: "Kött",
+        Price: 50.90,
+        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+    },
+    {
+        Name: "Köttbullar",
+        Img: "url",
+        Category: "Sött",
+        Price: 50.90,
+        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+    },
+    {
+        Name: "Köttbullar",
+        Img: "url",
+        Category: "Vego",
+        Price: 50.90,
+        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+    },
+    {
+        Name: "Köttbullar",
+        Img: "url",
+        Category: "Sött",
         Price: 50.90,
         Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
     },
