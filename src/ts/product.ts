@@ -4,35 +4,14 @@ import { mockData } from "./services/mockProducts";
 
 let produkter: IProduct[] = [];
 
-(document.getElementById("dryck") as HTMLLIElement).addEventListener("click", (e: Event) => {
-    let objekt: any = e.target;
-    showProduct(objekt.innerText);
-} );
-(document.getElementById("brod") as HTMLLIElement).addEventListener("click", (e: Event) => {
-    let objekt: any = e.target;
-    showProduct(objekt.innerText);
-} );
-(document.getElementById("sallad") as HTMLLIElement).addEventListener("click", (e: Event) => {
-    let objekt: any = e.target;
-    showProduct(objekt.innerText);
-} );
-(document.getElementById("kott") as HTMLLIElement).addEventListener("click", (e: Event) => {
-    let objekt: any = e.target;
-    showProduct(objekt.innerText);
-} );
-(document.getElementById("vego") as HTMLLIElement).addEventListener("click", (e: Event) => {
-    let objekt: any = e.target;
-    showProduct(objekt.innerText);
-} );
-(document.getElementById("fisk") as HTMLLIElement).addEventListener("click", (e: Event) => {
-    let objekt: any = e.target;
-    showProduct(objekt.innerText);
-} );
-(document.getElementById("sott") as HTMLLIElement).addEventListener("click", (e: Event) => {
+//Gör kategorierna klickbara
+
+(document.getElementById("categories") as HTMLUListElement).addEventListener("click", (e: Event) => {
     let objekt: any = e.target;
     showProduct(objekt.innerText);
 } );
 
+//Funktion för att skriva ut objekten på DOM:en
 
 function createProducts(products: IProduct[]) {
 
@@ -68,6 +47,8 @@ function createProducts(products: IProduct[]) {
 
     }
 }
+
+//Funktion för att skriva ut objekt med vald kategori på DOM:en
 
 function showProduct(category: string) {
     let showingData: IProduct[] = [];

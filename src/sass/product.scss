@@ -66,6 +66,10 @@ html {
 
 .content-window {
   border: 2px solid black;
+  overflow: scroll;
+  h2{
+    text-align: center;
+  }
 }
 
 #product-container{
