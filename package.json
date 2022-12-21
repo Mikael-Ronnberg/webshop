@@ -1,9 +1,11 @@
 {
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "buffer": "^5.7.1",
     "parcel": "^2.8.2"
   },
   "dependencies": {
-    "@parcel/validator-typescript": "^2.8.2"
+    "@parcel/validator-typescript": "^2.8.2",
+    "axios": "^1.2.1"
   }
 }
