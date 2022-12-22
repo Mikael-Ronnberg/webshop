@@ -46,3 +46,13 @@ body {
 .card button:hover {
   opacity: 0.7;
 }
+
+.product-object {
+  border: 2px solid black;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

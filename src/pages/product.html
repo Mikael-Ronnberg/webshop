@@ -6,53 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/sass/product.scss">
     <title>Product</title>
+    <link rel="stylesheet" href="/src/sass/product.scss">
+    <script src="/src/ts/product.ts" defer type="module"></script>
 </head>
 <body>
-    <section id="sidebar">
-        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
-            <h3 class="w3-bar-item">Menu</h3>
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        </div>
-    </section>
-    
-    <section id="main">
-    <h2 style="text-align:center">Product Card</h2>
-    <div class="products">
-
-        <div class="card">
-            <img src="https://media.delitea.se/product-images/XL/apotekarnes-julmust-33cl-inkl-pant-0.jpg" alt="julmust" style="width:10%">
-            <h1>Jul must</h1>
-            <p class="price">15kr</p>
-            <p>lorem</p>
-            <p><button>Add to Cart</button></p>
-        </div>
+  <main class="main-container">
+    <aside class="sidebar-container">
+      <ul id="categories">
+        <li id="dryck">Dryck</li>
+        <li id="brod">Bröd</li>
+        <li id="sallad">Sallad</li>
+        <li id="kott">Kött</li>
+        <li id="vego">Vego</li>
+        <li id="fisk">Fisk</li>
+        <li id="sott">Sött</li>
+      </ul>
+    </aside>
+    <aside class="content-window">
+      <h2>Våra Produkter!</h2>
+      <div id="product-container">
+      </div>
+    </aside>
+  </main>
 
 
-        <div class="card">
-            <img src="https://media.delitea.se/product-images/XL/apotekarnes-julmust-33cl-inkl-pant-0.jpg" alt="julmust" style="width:10%">
-            <h1>Jul must</h1>
-            <p class="price">15kr</p>
-            <p>lorem</p>
-            <p><button>Add to Cart</button></p>
-        </div>
-    
-        <div class="card">
-            <img src="https://media.delitea.se/product-images/XL/apotekarnes-julmust-33cl-inkl-pant-0.jpg" alt="julmust" style="width:10%">
-            <h1>Jul must</h1>
-            <p class="price">15kr</p>
-            <p>lorem</p>
-            <p><button>Add to Cart</button></p>
-            </div>
-    
-            <div class="card">
-                <img src="https://media.delitea.se/product-images/XL/apotekarnes-julmust-33cl-inkl-pant-0.jpg" alt="julmust" style="width:10%">
-                <h1>Jul must</h1>
-                <p class="price">15kr</p>
-                <p>lorem</p>
-                <p><button>Add to Cart</button></p>
-            </div>
+    <!-- <h2 style="text-align:center">Product Card</h2>
+    <div class="product-container">
         
             <div class="card">
                 <img src="https://media.delitea.se/product-images/XL/apotekarnes-julmust-33cl-inkl-pant-0.jpg" alt="julmust" style="width:10%">
