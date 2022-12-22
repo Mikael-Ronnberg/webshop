@@ -25,6 +25,7 @@ function createProducts(products: IProduct[]) {
         let kategori: HTMLParagraphElement = document.createElement("p");
         let beskrivning: HTMLParagraphElement = document.createElement("p");
         let pris: HTMLParagraphElement = document.createElement("p");
+        pris.classList.add("price");
         let knapp: HTMLButtonElement = document.createElement("button");
         // knapp.addEventListener("click", (products[i]) );
 
@@ -50,13 +51,13 @@ function createProducts(products: IProduct[]) {
 
 //Funktion för att skriva ut objekt med vald kategori på DOM:en
 
-function showProduct(category: string) {
+function showProduct(category: string) {    
     let showingData: IProduct[] = [];
     for(let i = 0; i < mockData.length; i++) {
         if (mockData[i].Category === category) {
             showingData.push(mockData[i]);
-        }
     }
+}
 
     createProducts(showingData);
 }
