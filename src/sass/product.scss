@@ -1,6 +1,13 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
@@ -18,7 +25,7 @@
 }
 
 .content-window {
-    width: 90%;
+    width: 70%;
 }
 
 .product-object {
@@ -53,4 +60,24 @@ button {
 
 button:hover {
   opacity: 0.7;
+}
+
+.cart-container {
+  width: 10%;
+  border: 2px solid black;
+}
+
+.cart-object {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  padding: 1em;
+  // margin: 1em;
+  p {
+    padding: 1em;
+  }
+  .cart-image {
+    width: 50px;
+    height: 50px;
+  }
 }

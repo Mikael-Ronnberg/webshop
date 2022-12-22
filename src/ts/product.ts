@@ -2,13 +2,13 @@ import { IProduct } from "./models/IProduct";
 import { mockData } from "./services/mockProducts";
 // import { getProduct } from "./services/mockProductService";
 
-let produkter: IProduct[] = [];
+let varuKorgen: IProduct[] = [];
 
 //Gör kategorierna klickbara
 
-(document.getElementById("categories") as HTMLUListElement).addEventListener("click", (e: Event) => {
-    let objekt: any = e.target;
-    showProduct(objekt.innerText);
+(document.getElementById("categories") as HTMLLIElement).addEventListener("click", (e: Event) => {
+    let objekt: string = (e.target as HTMLLIElement).innerHTML;
+    showProduct(objekt);
 } );
 
 //Funktion för att skriva ut objekten på DOM:en
@@ -27,7 +27,10 @@ function createProducts(products: IProduct[]) {
         let pris: HTMLParagraphElement = document.createElement("p");
         pris.classList.add("price");
         let knapp: HTMLButtonElement = document.createElement("button");
-        // knapp.addEventListener("click", (products[i]) );
+        knapp.addEventListener("click", (e: Event) => {
+           varuKorgen.push(products[i]);
+           showCart(varuKorgen);
+        } );
 
         namn.innerHTML = products[i].Name;
         bild.innerHTML = `<img src="${products[i].Img}" alt="${products[i].Name}">`;
@@ -60,6 +63,36 @@ function showProduct(category: string) {
 }
 
     createProducts(showingData);
+}
+
+function showCart(cart: IProduct[]) {
+
+    let cartUl: HTMLUListElement = document.getElementById("cart-container") as HTMLUListElement;
+
+    cartUl.innerHTML = "";
+    
+    for(let i = 0; i < cart.length; i++) {
+
+        let cartContainer: HTMLDivElement = document.createElement("div");
+        cartContainer.classList.add("cart-object");
+        let cartImg: HTMLImageElement = document.createElement("img");
+        cartImg.classList.add("cart-image");
+        let cartPrice: HTMLParagraphElement = document.createElement("p");
+        let cartName: HTMLParagraphElement = document.createElement("p");
+
+        cartName.innerHTML = cart[i].Name;
+        // cartImg.innerHTML = `<img src="${cart[i].Img}" alt="${cart[i].Name}">`
+        cartImg.src = cart[i].Img;
+        cartImg.alt = cart[i].Name;
+        cartPrice.innerHTML = cart[i].Price.toString();
+
+        cartContainer.appendChild(cartImg);
+        cartContainer.appendChild(cartName);
+        cartContainer.appendChild(cartPrice);
+
+        cartUl.appendChild(cartContainer);
+    }
+
 }
 
 createProducts(mockData);
