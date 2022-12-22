@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="/src/sass/checkout.scss">
+    <link rel="stylesheet" href="/src/sass/checkout.scss" />
     <script src="/src/ts/checkout.ts" defer type="module"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <main class="main-container">
-        <div class="main-container--form">
-            <h2>Granska din beställning</h2>
-            <form action="submit">
-                <label for="">Namn</label>
-                <input type="text" placeholder="Namn">
-                <label for="">Efternamn</label>
-                <input type="text" placeholder="Efternamn">
-                <label for="">Mailadress</label>
-                <input type="text" placeholder="Email">
-                
-                <label for="">Adress</label>
-                <input type="text" placeholder="Gatuadress">
-                <input type="text" placeholder="postnummer">
-                <input type="text" placeholder="Ort">
-                <button class="btn-left">Fortsätt Handla</button>
-                <button class="btn-right" type="submit">Godkänn</button>
-            </form>
-        </div>
+      <div class="main-container--form">
+        <h2>Granska din beställning</h2>
+        <form action="submit">
+          <label for="">Namn</label>
+          <input
+            type="text"
+            name="name"
+            required
+            minlength="2"
+            placeholder="Namn"
+          />
+          <label for="">Efternamn</label>
+          <input type="text" placeholder="Efternamn" />
+          <label for="">Mailadress</label>
+          <input type="text" placeholder="Email" />
+
+          <label for="">Adress</label>
+          <input type="text" placeholder="Gatuadress" />
+          <input type="text" placeholder="postnummer" />
+          <input type="text" placeholder="Ort" />
+          <button class="btn-left">Fortsätt Handla</button>
+          <button class="btn-right" type="submit">Godkänn</button>
+        </form>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
