@@ -8,7 +8,7 @@ export let mockData: IProduct[] = [
         Img: "https://media.delitea.se/product-images/XL/apotekarnes-julmust-33cl-inkl-pant-0.jpg",
         Category: "Dryck",
         Price: 10.90,
-        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+        Description: "lorem"
     },
     {
         Name: "Julskinka",
@@ -50,41 +50,41 @@ export let mockData: IProduct[] = [
         Img: "https://res.cloudinary.com/coopsverige/image/upload/v1632490120/cloud/234240.jpg",
         Category: "Sött",
         Price: 29.90,
-        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+        Description: "lorem"
     },
     {
         Name: "jul bullar",
         Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_63271/cf_259/julbullar.jpg",
         Category: "Sött",
         Price: 37.90,
-        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+        Description: "lorem"
     },
     {
         Name: "Glögg",
         Img: "https://www.unbooze.se/wp-content/uploads/2022/11/infused-liquid-glogg-blabar.png",
         Category: "Dryck",
         Price: 59.90,
-        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+        Description: "lorem"
     },
     {
         Name: "Inläggningssill",
         Img: "https://static.mathem.se/shared/images/products/large/07350126082743_c1n1.jpg",
         Category: "Fisk",
         Price: 30.90,
-        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+        Description: "lorem"
     },
     {
         Name: "Vego bullar",
         Img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEkvX-XIzo8pSWzds2OI0DQ_30NZKIDJt3Ow&usqp=CAU",
         Category: "Vego",
         Price: 50.90,
-        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+        Description: "lorem"
     },
     {
         Name: "Jul Bröd",
         Img: "https://sisselblom.se/wp-content/uploads/2015/03/julekake.jpg",
         Category: "Bröd",
         Price: 40.90,
-        Description: "En härlig klassiker som står på sig varje jul. Ett måste till julbordet och för den nyktre personen. Kul trivia: varje jul sjunker Coca Colas försäljning då den omåttligt populäre konkurrenten Julmust tar över marknaden"
+        Description: "lorem"
     },
 ];
