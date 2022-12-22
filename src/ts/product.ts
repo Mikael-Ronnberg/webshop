@@ -79,9 +79,18 @@ function showCart(cart: IProduct[]) {
         cartImg.classList.add("cart-image");
         let cartPrice: HTMLParagraphElement = document.createElement("p");
         let cartName: HTMLParagraphElement = document.createElement("p");
+        let plusBtn: HTMLButtonElement = document.createElement("button");
+        let minusBtn: HTMLButtonElement = document.createElement("button");
+  
+        minusBtn.classList.add("minus-btn");
+        plusBtn.classList.add("plus-btn");
 
+        minusBtn.innerText = "-";
+        plusBtn.innerText = "+";
+
+        
+        
         cartName.innerHTML = cart[i].Name;
-        // cartImg.innerHTML = `<img src="${cart[i].Img}" alt="${cart[i].Name}">`
         cartImg.src = cart[i].Img;
         cartImg.alt = cart[i].Name;
         cartPrice.innerHTML = cart[i].Price.toString();
@@ -89,6 +98,8 @@ function showCart(cart: IProduct[]) {
         cartContainer.appendChild(cartImg);
         cartContainer.appendChild(cartName);
         cartContainer.appendChild(cartPrice);
+        cartContainer.appendChild(minusBtn);
+        cartContainer.appendChild(plusBtn);
 
         cartUl.appendChild(cartContainer);
     }
