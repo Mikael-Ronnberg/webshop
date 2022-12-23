@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startsida</title>
-    <link rel="stylesheet" href="/src/sass/main.scss" />
+    <link rel="stylesheet" href="/src/sass/index.scss" />
     <script defer src="/src/ts/index.ts"></script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-container">
         <div>Logga</div>
-        <ul>
+        <ul class="links-content">
           <li><a href="/src/pages/product.html" class="nav-bar">Julbord</a></li>
-          <li><a href="" class="nav-bar">Julskinka</a></li>
-          <li><a href="" class="nav-bar">Pålägg</a></li>
-          <li><a href="" class="nav-bar">Dricka</a></li>
+          <li><a href="" class="nav-bar">Kontakt</a></li>
+          <li><a href="" class="nav-bar">info</a></li>
+          <li><a href="/src/pages/cart.html" class="nav-bar">Till kassan</a></li>
           <li>
             <a href="/src/pages/cart.html">
               <svg
@@ -42,13 +42,19 @@
     </header>
     <main>
       <div>
-        <h1>Välkommen till FES22S webshop</h1>
-        <img
+        <h1>Jul Huset AB</h1>
+        <div class="img"></div>
+        <!-- <img
           src="https://cdb.arla.com/api/assets/arla-se/5cf069d8-e69c-43f4-bf08-548324dbd38c/julbord-2048x1152.jpg?width=1280&height=650&mode=cropupsize&quality=90"
           alt="Julbord"
-        />
+        /> -->
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer-container">
+      <ul class="footer-list">
+        <li><a href="/src/pages/contact.html">Kontakt</a></li>
+        <li><a href="">Info</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
