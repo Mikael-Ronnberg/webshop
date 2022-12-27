@@ -15,36 +15,50 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 80px;
     background-color: rgb(173, 173, 157);
+}
+
+.tree-logo {
+    padding: 0px 10px;
 }
 
 #logo-name {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 50px;
     margin: 0%;
+    padding-left: 5%;
     text-align: center;
     color: white;
     text-shadow:
         3px 3px 0 #666,
 }
 
-li {
-    position: relative;
-}
  .links-content {
     display: grid;
     position: absolute;
-    // background: rgba(255, 255, 255, 0.102); 
-    right: 15%;
-    width: 40px;
-    transform: translate(100%);
+    background: #adad9dbc;
+    right: 0px;
+    width: 180px;
+    height: 400px;
+    margin-top: 20px;
+    // margin-top: 60px;
+    transform: translateY(-200%);
     transition: .6s;
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
+    padding: 15% 30%;
 }
 
 .links-content li {
     padding-left: 35px;
+    position: relative;
 }
+
+// li {
+//     position: relative;
+// }
 
 nav .navbar-toggler {
     display: grid !important;
@@ -72,7 +86,7 @@ display: none;
 }
 
 input:checked ~ nav .links-content {
-transform: translateX(0);
+transform: translateY(0);
 }
 
 input:checked ~ nav .navbar-toggler {
@@ -93,43 +107,48 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 transform: rotate(-45deg);
 }
 
+.img-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 80%;
+}
 
-// h1 {
-//     margin: 0%;
-//     color: rgb(184, 53, 53);
-//     text-align: center;
-//     background-color: rgba(240, 255, 255, 0.234);
-//     font-size: 36pt;
-//     -webkit-text-stroke: 1px black;
-//     color: white;
-//     text-shadow:
-//         3px 3px 0 #000,
-//       -1px -1px 0 #000,  
-//        1px -1px 0 #000,
-//        -1px 1px 0 #000,
-//         1px 1px 0 #000;
-// }
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.404);
+    font-size: 30pt;
+    color: white;
+    text-shadow:
+    2px 2px 0 #666,
+}
 
-// .links-content {
-//     display: flex;
+.links-content {
+     a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 20px 28px;
+    border-radius: 20px;
+    text-shadow: 2px 2px 0 #666,
+    }
+    a:hover {
+    background-color: #65656585;
+    transition: background-color 0.8s ease;
+    }
+}
 
-//     li {
-//         list-style: none;
-//         margin: 10px;
-//        a {
-//         text-decoration: none;
-//         list-style-type: none;
-//         color: black;
-//         border: 1px solid black;
-//         padding: 5px;
-//         border-radius: 5px;
-//        }
-//        a:hover {
-//         background-color: #65656585;
-//         transition: background-color 0.8s ease;
-//        }
-//     }
-// }
+
+main {
+    background-image: url("https://via.tt.se/data/images/00964/78026133-c1e5-4a1b-8aaf-174ef2b509de-w_960.jpg");
+    background-color: #cccccc;
+    height: 92vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .footer-container {
     background-color: burlywood;
@@ -153,20 +172,12 @@ transform: rotate(-45deg);
        }
 }
 
+
 .footer-list {
     display: flex;
     justify-content: center;
     margin-right: 50px;
     // justify-content: space-evenly;
-}
-
-main {
-    background-image: url("https://cdb.arla.com/api/assets/arla-se/5cf069d8-e69c-43f4-bf08-548324dbd38c/julbord-2048x1152.jpg?width=1280&height=650&mode=cropupsize&quality=90");
-    background-color: #cccccc;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 @media (min-width: 768px) {
