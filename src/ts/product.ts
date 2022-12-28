@@ -152,8 +152,8 @@ function showCart(cart: IProduct[]) {
         cartName.innerHTML = cart[i].Name;
         cartImg.src = cart[i].Img;
         cartImg.alt = cart[i].Name;
-        cartPrice.innerHTML = (cart[i].Price + cart[i].Quantity).toString();
-        cartQuant.innerHTML = "Antal " + cart[i].Quantity.toString();
+        cartPrice.innerHTML = (cart[i].Price * cart[i].Quantity).toFixed(2);
+        cartQuant.innerHTML = "Antal: " + cart[i].Quantity.toString();
         totalSum.innerHTML = priceSum.toFixed(2) + " kr";
 
         cartContainer.appendChild(cartQuant);
