@@ -48,7 +48,7 @@ input {
    text-decoration: none;
    color: white;
    font-size: large;
-   padding: 20px 28px;
+   padding: .1rem 2rem;
    border-radius: 20px;
    text-shadow: 1px 1px 0 black,
    }
@@ -155,7 +155,7 @@ input {
         }
         input {
             height: 2rem;
-            width: 30rem;
+            width: 40rem;
             display: block;
             margin: 2rem;
         }
@@ -164,14 +164,24 @@ input {
             font-size: 5rem;
             margin-bottom: 5rem;
         }
-        .btn-left {
-            margin-right: 5em;
-        }
-        .btn-right {
-            margin-left: 5em;
-        }
-    }
 
+    }
+    
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    button {
+        margin: 3rem;
+        border-radius: 10px;
+        width: 8rem;
+        height: 2.5rem;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 #cart-summerize {
@@ -195,8 +205,11 @@ input {
     align-items: center;
     margin: 2rem;
     button {
-        width: 3rem;
-        height: 3rem;
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 10px;
+        border: none;
     }
 }
 

@@ -48,7 +48,7 @@ input {
  text-decoration: none;
  color: white;
  font-size: large;
- padding: 20px 28px;
+ padding: .1rem 2rem;
  border-radius: 20px;
  text-shadow: 1px 1px 0 black,
  }
@@ -148,10 +148,14 @@ input {
   }
   
   .about-section {
-    padding: 50px;
+    font-size: 1.5rem;
+    padding: 5rem;
     text-align: center;
     background-color: #474e5d;
     color: white;
+    p {
+      margin: 4rem;
+    }
   }
   
   .container {
