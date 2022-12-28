@@ -6,6 +6,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+//Allt inom Nav
+
+nav {
+    margin-right: 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #d9bbad;
+}
+
 #logo-name {
     a {
         color: white;
@@ -21,44 +35,13 @@
         3px 3px 0 #666,
 }
 
-
-nav {
-    margin-right: 20px;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: #d9bbad;
-}
-
 .tree-logo {
     padding: 0px 10px;
 }
 
 input {
-display: none;
+    display: none;
 }
-
-.img-text {
-    display: flex;
-    justify-content: center;
-    padding-top: 320px;
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.404);
-    font-size: 30pt;
-    color: white;
-    text-shadow:
-    2px 2px 0 #666,
-}
-
 .links-content {
      a {
     text-decoration: none;
@@ -73,47 +56,6 @@ h1 {
     transition: background-color 0.8s ease;
     }
 }
-
-main {
-    background-image: url("https://via.tt.se/data/images/00964/78026133-c1e5-4a1b-8aaf-174ef2b509de-w_960.jpg");
-    background-color: #cccccc;
-    height: 92vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.footer-container {
-    background-color: #b6b6b6;
-    display: flex;
-    justify-content: flex-end;
-    li {
-        list-style: none;
-        margin: 10px;
-    }
-    a {
-        text-decoration: none;
-        list-style-type: none;
-        font-weight: bold;
-        color: black;
-        padding: 5px;
-        border-radius: 5px;
-       }
-       a:hover {
-        background-color: #f9f9f985;
-        transition: background-color 0.8s ease;
-       }
-}
-
-
-.footer-list {
-    display: flex;
-    justify-content: center;
-    margin-right: 50px;
-    // justify-content: space-evenly;
-}
-
 @media (max-width: 768px) {
     .links-content {
        display: grid;
@@ -190,4 +132,60 @@ main {
         flex-direction: row;
     }
 
+}
+
+.img-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 320px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.404);
+    font-size: 30pt;
+    color: white;
+    text-shadow:
+    2px 2px 0 #666,
+}
+
+main {
+    background-image: url("https://via.tt.se/data/images/00964/78026133-c1e5-4a1b-8aaf-174ef2b509de-w_960.jpg");
+    background-color: #cccccc;
+    height: 92vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-container {
+    background-color: #b6b6b6;
+    display: flex;
+    justify-content: flex-end;
+    li {
+        list-style: none;
+        margin: 10px;
+    }
+    a {
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        color: black;
+        padding: 5px;
+        border-radius: 5px;
+       }
+       a:hover {
+        background-color: #f9f9f985;
+        transition: background-color 0.8s ease;
+       }
+}
+
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    // justify-content: space-evenly;
 }
