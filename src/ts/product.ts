@@ -67,19 +67,47 @@ function showProduct(category: string) {
     createProducts(showingData);
 };
 
+//Funktion för att lägga till objekt i varukorgen
+
 function addToCart(product: IProduct) {
 
     if(varuKorgen.length !== 0) {
         for(let i = 0; i < varuKorgen.length; i++) {
             if(product.Id === varuKorgen[i].Id) {
                 varuKorgen[i].Quantity++;
+                updateCart(varuKorgen);
                 return;
             }
-            showCart(varuKorgen);
         }
     }
     varuKorgen.push(product);
-    showCart(varuKorgen);
+    updateCart(varuKorgen);
+}
+
+//Funktion för att uppdatera varukorgen
+
+function updateCart(newCart: IProduct[]) {
+
+    let freshCart: IProduct[] = [];
+
+    for(let i = 0; i < newCart.length; i++) {
+        freshCart.push(newCart[i]);
+        if(newCart[i].Quantity === 0) {
+            freshCart.slice(i);
+        }
+    }
+    showCart(freshCart);
+}
+
+function removeProduct(product: IProduct) {
+    let freshCart: IProduct[] = [];
+
+    for(let i = 0; i < varuKorgen.length; i++) {
+        if(varuKorgen[i] !== product) {
+            freshCart.push(varuKorgen[i]);
+        }
+    }
+    showCart(freshCart);
 }
 
 //Funktion för att visa objekt i kundkorgen
@@ -106,7 +134,15 @@ function showCart(cart: IProduct[]) {
         let cartQuant: HTMLParagraphElement = document.createElement("p");
         let cartName: HTMLParagraphElement = document.createElement("p");
         let plusBtn: HTMLButtonElement = document.createElement("button");
+        plusBtn.addEventListener("click", (e: Event)=> {
+            varuKorgen[i].Quantity ++;
+            updateCart(varuKorgen);
+        })
         let minusBtn: HTMLButtonElement = document.createElement("button");
+        minusBtn.addEventListener("click", (e: Event)=> {
+            varuKorgen[i].Quantity --;
+            updateCart(varuKorgen);
+        })
   
         minusBtn.classList.add("minus-btn");
         plusBtn.classList.add("plus-btn");

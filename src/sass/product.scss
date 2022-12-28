@@ -44,6 +44,7 @@ input {
 }
 
 .sidebar-container {
+  font-size: 1.5rem;
     width: 10%;
     li {
       list-style: none;
@@ -51,8 +52,8 @@ input {
     li:hover {
       background-color: #65656585;
       transition: background-color 0.8s ease;
-      width: 50px;
-      border-radius: 10%;
+      width: auto;
+      border-radius: 2px;
     }
 }
 
@@ -94,17 +95,23 @@ button:hover {
   opacity: 0.7;
 }
 
-.cart-container {
-  width: 10%;
-  border: 2px solid black;
+#cart-container {
+  margin-top: 3rem;
+  width: 20vw;
+  height: 70vh;
+  overflow: scroll;
+}
+
+.tot-wrapper {
+  margin: .5rem;
 }
 
 .cart-object {
+  margin: 2rem;
   width: 100px;
   height: 100px;
   display: flex;
-  padding: 1em;
-  // margin: 1em;
+  padding: .5em;
   p {
     padding: 1em;
   }
