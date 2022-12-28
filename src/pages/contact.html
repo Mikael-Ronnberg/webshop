@@ -1,75 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/sass/contact.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/sass/contact.scss" />
     <title>Kontakt</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header id="#Home">
+      <div class="nav-container">
+        <div id="logo-name">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="tree-logo"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507z"
+            />
+          </svg>
+          <a href="#Home">jul huset</a>
+        </div>
+        <input type="checkbox" id="toggle" />
+        <nav>
+          <label for="toggle" class="navbar-toggler">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </label>
+          <ul class="links-content">
+            <li>
+              <a href="/src/pages/product.html" class="nav-bar">Handla</a>
+            </li>
+            <li>
+              <a href="/src/pages/contact.html" class="nav-bar">Kontakt</a>
+            </li>
+            <li><a href="" class="nav-bar">info</a></li>
+            <!-- <li>
+            <a href="/src/pages/cart.html" class="nav-bar">Till kassan</a>
+          </li> -->
+            <li>
+              <a href="/src/pages/cart.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-basket2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"
+                  />
+                  <path
+                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"
+                  />
+                </svg>
+                Varukorg
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-        <header>
-            <nav class="nav-container">
-              <div>Logga</div>
-              <ul class="links-content">
-                <li><a href="/src/pages/product.html" class="nav-bar">Julbord</a></li>
-                <li><a href="/src/pages/contact.html" class="nav-bar">Kontakt</a></li>
-                <li><a href="/src/pages/info.html" class="nav-bar">info</a></li>
-                <li><a href="/src/pages/cart.html" class="nav-bar">Till kassan</a></li>
-                <li>
-                  <a href="/src/pages/cart.html">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-basket2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"
-                      />
-                      <path
-                        d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"
-                      />
-                    </svg>
-                    Varukorg
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </header>
-        <div class="container">
-            <form action="/action_page.php">
-              <label for="fname">Förnamn</label>
-              <input type="text" id="fname" name="firstname" placeholder="Förnamn...">
-          
-              <label for="ename">Efternamn</label>
-              <input type="text" id="ename" name="efternamn" placeholder="efternamn...">
-          
-              <label for="land">Land</label>
-              <select id="land" name="land">
-                <option value="sweden">Sweden</option>
-                <option value="norwat">Norway</option>
-                <option value="finland">Finland</option>
-                <option value="denmark">Denmark</option>
-              </select>
-          
-              <label for="subject">Ämne</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Förnamn</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Förnamn..."
+          />
+
+          <label for="ename">Efternamn</label>
+          <input
+            type="text"
+            id="ename"
+            name="efternamn"
+            placeholder="efternamn..."
+          />
+
+          <label for="land">Land</label>
+          <select id="land" name="land">
+            <option value="sweden">Sweden</option>
+            <option value="norwat">Norway</option>
+            <option value="finland">Finland</option>
+            <option value="denmark">Denmark</option>
+          </select>
+
+          <label for="subject">Ämne</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
 
     <footer class="footer-container">
-        <ul class="footer-list">
-          <li><a href="/src/pages/contact.html">Kontakt</a></li>
-          <li><a href="">Info</a></li>
-        </ul>
-      </footer>
-
-</body>
+      <ul class="footer-list">
+        <li><a href="/src/pages/contact.html">Kontakt</a></li>
+        <li><a href="">Info</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
