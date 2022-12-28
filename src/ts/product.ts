@@ -32,16 +32,15 @@ function createProducts(products: IProduct[]) {
         pris.classList.add("price");
         let knapp: HTMLButtonElement = document.createElement("button");
         knapp.addEventListener("click", (e: Event) => {
-           varuKorgen.push(products[i]);
-           showCart(varuKorgen);
+            addToCart(products[i]);
         } );
 
         namn.innerHTML = products[i].Name;
         bild.innerHTML = `<img src="${products[i].Img}" alt="${products[i].Name}">`;
         
         kategori.innerHTML = products[i].Category;
-        beskrivning.innerHTML = products[i].Description
-        pris.innerHTML = products[i].Price.toString() + " kr";
+        beskrivning.innerHTML = products[i].Description;
+        pris.innerHTML = products[i].Price.toFixed(2) + " kr";
         knapp.innerHTML = "Lägg i varukorgen";
 
         aProduct.appendChild(namn);
@@ -68,6 +67,20 @@ function showProduct(category: string) {
     createProducts(showingData);
 };
 
+function addToCart(product: IProduct) {
+
+    if(varuKorgen.length !== 0) {
+        for(let i = 0; i < varuKorgen.length; i++) {
+            if(product.Id === varuKorgen[i].Id) {
+                varuKorgen[i].Quantity++;
+                return;
+            }
+            showCart(varuKorgen);
+        }
+    }
+    varuKorgen.push(product);
+    showCart(varuKorgen);
+}
 
 //Funktion för att visa objekt i kundkorgen
 
@@ -83,14 +96,14 @@ function showCart(cart: IProduct[]) {
     
     for(let i = 0; i < cart.length; i++) {
 
-        priceSum = priceSum + cart[i].Price;
+        priceSum += cart[i].Price * cart[i].Quantity;
 
         let cartContainer: HTMLLIElement= document.createElement("li");
         cartContainer.classList.add("cart-object");
         let cartImg: HTMLImageElement = document.createElement("img");
         cartImg.classList.add("cart-image");
         let cartPrice: HTMLParagraphElement = document.createElement("p");
-        
+        let cartQuant: HTMLParagraphElement = document.createElement("p");
         let cartName: HTMLParagraphElement = document.createElement("p");
         let plusBtn: HTMLButtonElement = document.createElement("button");
         let minusBtn: HTMLButtonElement = document.createElement("button");
@@ -104,9 +117,11 @@ function showCart(cart: IProduct[]) {
         cartName.innerHTML = cart[i].Name;
         cartImg.src = cart[i].Img;
         cartImg.alt = cart[i].Name;
-        cartPrice.innerHTML = cart[i].Price.toString();
-        totalSum.innerHTML = priceSum.toString();
+        cartPrice.innerHTML = (cart[i].Price + cart[i].Quantity).toString();
+        cartQuant.innerHTML = "Antal " + cart[i].Quantity.toString();
+        totalSum.innerHTML = priceSum.toFixed(2) + " kr";
 
+        cartContainer.appendChild(cartQuant);
         cartContainer.appendChild(cartImg);
         cartContainer.appendChild(cartName);
         cartContainer.appendChild(cartPrice);
@@ -119,4 +134,5 @@ function showCart(cart: IProduct[]) {
 };
 
 createProducts(mockData);
+
 showCart(varuKorgen);
