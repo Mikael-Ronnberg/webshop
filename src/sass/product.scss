@@ -121,6 +121,27 @@ input {
  transform: rotate(-45deg);
  }
  
+ .product-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+ }
+ //produkt
+ .content-window {
+  overflow: scroll;
+  height: 90vh;
+  width: 55vw;
+}
+#categories {
+  padding: 0px;
+}
+
+.sidebar-container {
+  margin: 0px;
+  // padding-right: 60px;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -140,11 +161,8 @@ input {
 //Allt för SideBar
 
 .sidebar-container {
-  margin: 2rem;
-  font-size: 1.5rem;
-  width: 10vw;
   li {
-    padding: 1.2rem;
+    padding: 1rem;
     list-style: none;
     cursor: pointer;
   }
@@ -159,11 +177,11 @@ input {
 //Allt för produkt content
 .content-window {
   overflow: scroll;
-  h2 {
-    margin: 5rem;
-    font-size: 3rem;
-    text-align: center;
-  }
+  // h2 {
+  //   margin: 5rem;
+  //   font-size: 3rem;
+  //   text-align: center;
+  // }
   height: 90vh;
   width: 60vw;
 }
