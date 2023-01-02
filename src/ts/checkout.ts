@@ -1,4 +1,5 @@
-import { IProduct } from "./models/IProduct";
+import { IProduct } from "./modules/IProduct";
+// import { updateCart } from "./modules/functions";
 // import { mockData } from "./services/mockProducts";
 // import { getProduct } from "./services/mockProductService";
 
@@ -34,11 +35,6 @@ function showCart(cart: IProduct[]) {
         let minusBtn: HTMLButtonElement = document.createElement("button");
         minusBtn.addEventListener("click", (e: Event)=> {
             varuKorgen[i].Quantity --;
-            if(varuKorgen[i].Quantity === 0){
-                varuKorgen.slice(varuKorgen.indexOf(varuKorgen[i]));
-                console.log(varuKorgen.indexOf(varuKorgen[i]));
-                console.log(varuKorgen);
-            }
             updateCart(varuKorgen);
         })
   
