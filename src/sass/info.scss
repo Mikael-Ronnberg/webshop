@@ -120,7 +120,24 @@ input {
  input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
  transform: rotate(-45deg);
  }
+
+ .about-section {
+  padding: 2rem;
+  p {
+    margin: 2.5rem;
+  }
+ }
+
+ .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
  
+ .column {
+  width: 75%;
+ }
+
 }
 
 @media (min-width: 768px) {
@@ -129,13 +146,23 @@ input {
       flex-direction: row;
   }
 
+  .about-section {
+    padding: 5rem;
+    p {
+      margin: 4rem;
+    }
+   }
+
 }
 
 //main
-  
+  .team-header {
+    padding: 20px;
+  }
+
   .column {
     float: left;
-    width: 33.3%;
+    // width: 33.3%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
@@ -147,17 +174,13 @@ input {
   
   .about-section {
     font-size: 1.5rem;
-    padding: 5rem;
     text-align: center;
     background-color: #474e5d;
     color: white;
-    p {
-      margin: 4rem;
-    }
   }
   
   .container {
-    padding: 0 16px;
+    padding: 18px;
   }
   
   .container::after, .row::after {
@@ -188,7 +211,7 @@ input {
 
 //Footer
 .footer-container {
-    background-color: burlywood;
+    background-color: #b6b6b6;
     display: flex;
     justify-content: flex-end;
     li {
