@@ -1,4 +1,4 @@
-import { IProduct } from "./models/IProduct";
+import { IProduct } from "./modules/IProduct";
 import { mockData } from "./services/mockProducts";
 // import { getProduct } from "./services/mockProductService";
 
@@ -89,7 +89,11 @@ function addToCart(product: IProduct) {
 function updateCart(newCart: IProduct[]) {
     let freshCart: IProduct[] = [];
     for(let i = 0; i < newCart.length; i++) {
-        freshCart.push(newCart[i]);
+        if(newCart[i].Quantity != 0){
+            freshCart.push(newCart[i]);
+        } else {
+            window.location.reload();
+        }
     }
     showCart(freshCart);
 }
@@ -119,8 +123,7 @@ function showCart(cart: IProduct[]) {
     
     for(let i = 0; i < cart.length; i++) {
 
-        priceSum += cart[i].Price * cart[i].Quantity;
-
+        
         let cartContainer: HTMLLIElement= document.createElement("li");
         cartContainer.classList.add("cart-object");
         let cartImg: HTMLImageElement = document.createElement("img");
@@ -136,23 +139,24 @@ function showCart(cart: IProduct[]) {
         let minusBtn: HTMLButtonElement = document.createElement("button");
         minusBtn.addEventListener("click", (e: Event)=> {
             varuKorgen[i].Quantity --;
-            if(varuKorgen[i].Quantity === 0){
-                varuKorgen.slice(i);
-                console.log(varuKorgen);
-            }
-            updateCart(varuKorgen);
-        })
-  
-        minusBtn.classList.add("minus-btn");
-        plusBtn.classList.add("plus-btn");
-
-        minusBtn.innerText = "-";
-        plusBtn.innerText = "+";
-
-        cartName.innerHTML = cart[i].Name;
-        cartImg.src = cart[i].Img;
-        cartImg.alt = cart[i].Name;
-        cartPrice.innerHTML = (cart[i].Price * cart[i].Quantity).toFixed(2);
+            // if(varuKorgen[i].Quantity === 0){
+                //     varuKorgen.slice(i);
+                //     console.log(varuKorgen);
+                // }
+                updateCart(varuKorgen);
+            })
+            
+            minusBtn.classList.add("minus-btn");
+            plusBtn.classList.add("plus-btn");
+            
+            minusBtn.innerText = "-";
+            plusBtn.innerText = "+";
+            
+            priceSum += cart[i].Price * cart[i].Quantity;
+            cartName.innerHTML = cart[i].Name;
+            cartImg.src = cart[i].Img;
+            cartImg.alt = cart[i].Name;
+            cartPrice.innerHTML = (cart[i].Price * cart[i].Quantity).toFixed(2);
         cartQuant.innerHTML = "Antal: " + cart[i].Quantity.toString();
         totalSum.innerHTML = priceSum.toFixed(2) + " kr";
 
