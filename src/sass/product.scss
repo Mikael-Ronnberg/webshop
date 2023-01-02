@@ -142,6 +142,35 @@ input {
   // padding-right: 60px;
 }
 
+//varukorg funktion/kassa
+#cart-container {
+  width: 100vw;
+  height: auto;
+}
+
+#cart-basket {
+  padding: 0px;
+}
+
+.cart-object {
+  margin: 0rem;
+  height: 80px;
+}
+
+#total {
+  margin: 16px auto;
+}
+
+#total-sum {
+  margin: 16px auto;
+}
+
+//Allt för produkt content
+.content-window {
+  overflow: scroll;
+  height: auto;
+  width: 60vw;
+}
 }
 
 @media (min-width: 768px) {
@@ -150,6 +179,28 @@ input {
       flex-direction: row;
   }
 
+  #cart-container {
+    width: 20vw;
+    // height: auto;
+  }
+
+  .cart-object {
+    width: 100px;
+    // margin: 2rem;
+    height: 100px;
+  }
+
+  //Allt för produkt content
+.content-window {
+  overflow: scroll;
+  // h2 {
+  //   margin: 5rem;
+  //   font-size: 3rem;
+  //   text-align: center;
+  // }
+  height: 90vh;
+  width: 60vw;
+}
 }
 
 .main-container {
@@ -174,17 +225,6 @@ input {
   }
 }
 
-//Allt för produkt content
-.content-window {
-  overflow: scroll;
-  // h2 {
-  //   margin: 5rem;
-  //   font-size: 3rem;
-  //   text-align: center;
-  // }
-  height: 90vh;
-  width: 60vw;
-}
 #product-container {
     border: 1px solid #c3c3c3;
     display: flex;
@@ -230,12 +270,9 @@ button:hover {
 #cart-container {
   position: relative;
   z-index: 1;
-  // margin-top: 3rem;
-  width: 20vw;
-  height: 50vh;
   overflow: scroll;
   span {
-    margin: 1rem;
+    // margin: 1rem;
     font-size: 1.5rem;
   }
 }
@@ -254,10 +291,8 @@ button:hover {
 }
 
 .cart-object {
-  margin: 2rem;
-  width: 100px;
-  height: 100px;
   display: flex;
+  align-items: center;
   padding: .5em;
   p {
     padding: 1em;
