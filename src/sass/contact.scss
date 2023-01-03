@@ -38,7 +38,7 @@ nav {
     padding: 0px 10px;
   }
   
-  input {
+  .toggle-button {
     display: none;
   }
   
@@ -141,6 +141,11 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+textarea {
+  height: 200px;
+
 }
 
 input[type=submit] {
