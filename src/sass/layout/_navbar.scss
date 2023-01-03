@@ -12,19 +12,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: color$primary;
+  background-color: color.$primary;
 }
 
 #logo-name {
   a {
-    color: color$whiteish;
+    color: color.$whiteish;
     text-decoration: none;
   }
   font-size: 50px;
   margin: 0%;
   padding-left: 5%;
   text-align: center;
-  color: color$whiteish;
+  color: color.$whiteish;
   text-shadow: 3px 3px 0 #666;
 }
 
@@ -35,14 +35,14 @@ input {
 .links-content {
   a {
     text-decoration: none;
-    color: color$whiteish;
+    color: color.$whiteish;
     font-size: large;
     padding: 0.5rem 2rem;
     border-radius: 20px;
-    text-shadow: 1px 1px 0 color$blackish;
+    text-shadow: 1px 1px 0 color.$blackish;
   }
   a:hover {
-    background-color: color$primaryDarker;
+    background-color: color.$primaryDarker;
     transition: background-color 0.8s ease;
   }
 }
@@ -51,7 +51,7 @@ input {
   .links-content {
     display: grid;
     position: absolute;
-    background: color$primaryTransparent;
+    background: color.$primaryTransparent;
     right: 0px;
     width: 180px;
     height: 400px;
@@ -85,7 +85,7 @@ input {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background: color$whiteish;
+    background: color.$whiteish;
     border-radius: 10%;
     transition: 0.4s;
   }

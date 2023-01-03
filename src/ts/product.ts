@@ -15,6 +15,14 @@ let varuKorgen: IProduct[] = JSON.parse(localStorage.getItem("cart") || "[]");
     }
 } );
 
+//Funktion för att få fram varukorgen
+let myBasket: HTMLAnchorElement = document.getElementById("basket-press") as HTMLAnchorElement;
+
+
+myBasket.addEventListener("click", () => {
+    (document.getElementById("cart-container") as HTMLDivElement).classList.toggle("hidden-basket");
+})
+
 //Funktion för att skriva ut objekten på DOM:en
 
 function createProducts(products: IProduct[]) {
