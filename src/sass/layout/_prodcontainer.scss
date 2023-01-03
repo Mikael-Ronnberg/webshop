@@ -1,0 +1,16 @@
+.content-window {
+  height: 90vh;
+  width: 60vw;
+  overflow: scroll;
+  // h2 {
+  //   margin: 5rem;
+  //   font-size: 3rem;
+  //   text-align: center;
+  // }
+}
+
+#product-container {
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+}

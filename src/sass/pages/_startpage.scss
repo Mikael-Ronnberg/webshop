@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-image {
+  background-image: url("https://via.tt.se/data/images/00964/78026133-c1e5-4a1b-8aaf-174ef2b509de-w_960.jpg");
+  background-color: #cccccc;
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.404);
+  font-size: 30pt;
+  color: white;
+  text-shadow: 2px 2px 0 #666;
+}
+
+.img-text {
+  display: flex;
+  justify-content: center;
+  padding-top: 320px;
+}

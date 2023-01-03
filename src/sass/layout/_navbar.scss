@@ -1,13 +1,8 @@
-* {
-  list-style: none;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-//Allt Inom Naven
-
 nav {
   margin-right: 20px;
+  li {
+    list-style: none;
+  }
 }
 
 .nav-container {
@@ -23,7 +18,6 @@ nav {
     color: white;
     text-decoration: none;
   }
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   margin: 0%;
   padding-left: 5%;
@@ -32,9 +26,9 @@ nav {
   text-shadow: 3px 3px 0 #666;
 }
 
-.tree-logo {
-  padding: 0px 10px;
-}
+// .tree-logo {
+//   padding: 0px 10px;
+// }
 
 input {
   display: none;
@@ -118,23 +112,6 @@ input {
   input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     transform: rotate(-45deg);
   }
-
-  .about-section {
-    padding: 2rem;
-    p {
-      margin: 2.5rem;
-    }
-  }
-
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .column {
-    width: 75%;
-  }
 }
 
 @media (min-width: 768px) {
@@ -142,95 +119,4 @@ input {
     display: flex;
     flex-direction: row;
   }
-
-  .about-section {
-    padding: 5rem;
-    p {
-      margin: 4rem;
-    }
-  }
-}
-
-//main
-.team-header {
-  padding: 20px;
-}
-
-.column {
-  float: left;
-  // width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
-.container {
-  padding: 18px;
-}
-
-.container::after,
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-//Footer
-.footer-container {
-  background-color: #b6b6b6;
-  display: flex;
-  justify-content: flex-end;
-  li {
-    list-style: none;
-    margin: 10px;
-  }
-  a {
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: bold;
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  a:hover {
-    background-color: #f9f9f985;
-    transition: background-color 0.8s ease;
-  }
-}
-
-.footer-list {
-  display: flex;
-  justify-content: center;
-  margin-right: 50px;
 }
