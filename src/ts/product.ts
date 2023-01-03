@@ -36,6 +36,7 @@ function createProducts(products: IProduct[]) {
         let name: HTMLHeadingElement = document.createElement("h4");
         let category: HTMLParagraphElement = document.createElement("p");
         let description: HTMLParagraphElement = document.createElement("p");
+        description.classList.add("description-text");
         let price: HTMLParagraphElement = document.createElement("p");
         price.classList.add("price");
         let button: HTMLButtonElement = document.createElement("button");
