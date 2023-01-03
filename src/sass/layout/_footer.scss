@@ -1,40 +1,41 @@
 @use "../mixins/mixins" as mix;
+@use "../variables/colors" as color;
 
 .footer-container {
   //   @include mix.desktop {
   // }
-
-  background-color: #d67a7a;
+  height: 30vh;
+  margin: rem;
+  // background-color: color.$whiteish;
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-
-  @include mix.mobile {
-    height: 60%;
-    // color: white;
-    // background-color: black;
-  }
-
-  li {
-    list-style: none;
-    margin: 10px;
-  }
-  a {
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: bold;
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  a:hover {
-    background-color: #f9f9f985;
-    transition: background-color 0.8s ease;
-  }
-}
-
-.footer-list {
-  display: flex;
+  align-items: center;
+  gap: 20rem;
   justify-content: center;
-  margin-right: 50px;
+  // width: 100%;
+
+  // @include mix.mobile {
+  //   height: 60%;
+  //   // color: white;
+  //   // background-color: black;
+  // }
+  ul {
+    li {
+      list-style: none;
+      margin: 10px;
+    }
+    a {
+      text-decoration: none;
+      list-style-type: none;
+      font-weight: bold;
+      color: black;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: #f9f9f985;
+      transition: background-color 0.8s ease;
+    }
+    border-left: 5px solid color.$primary;
+    border-right: 5px solid color.$primary;
+  }
 }
