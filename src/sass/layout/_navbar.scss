@@ -1,3 +1,5 @@
+@use "../variables/colors" as color;
+
 nav {
   margin-right: 20px;
   li {
@@ -10,25 +12,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: #d9bbad;
+  background-color: color$primary;
 }
 
 #logo-name {
   a {
-    color: white;
+    color: color$whiteish;
     text-decoration: none;
   }
   font-size: 50px;
   margin: 0%;
   padding-left: 5%;
   text-align: center;
-  color: white;
+  color: color$whiteish;
   text-shadow: 3px 3px 0 #666;
 }
-
-// .tree-logo {
-//   padding: 0px 10px;
-// }
 
 input {
   display: none;
@@ -37,14 +35,14 @@ input {
 .links-content {
   a {
     text-decoration: none;
-    color: white;
+    color: color$whiteish;
     font-size: large;
     padding: 0.5rem 2rem;
     border-radius: 20px;
-    text-shadow: 1px 1px 0 black;
+    text-shadow: 1px 1px 0 color$blackish;
   }
   a:hover {
-    background-color: #8e7b72;
+    background-color: color$primaryDarker;
     transition: background-color 0.8s ease;
   }
 }
@@ -53,7 +51,7 @@ input {
   .links-content {
     display: grid;
     position: absolute;
-    background: #d9bbadaa;
+    background: color$primaryTransparent;
     right: 0px;
     width: 180px;
     height: 400px;
@@ -87,7 +85,7 @@ input {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background: white;
+    background: color$whiteish;
     border-radius: 10%;
     transition: 0.4s;
   }
