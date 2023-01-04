@@ -103,6 +103,7 @@
   }
 }
 
+
 // Sidebar
   .sidebar-container {
     margin: 0px;
@@ -243,6 +244,12 @@
       }
     }
   }
+
+  .read-btn {
+    background-color: #c3c3c300;
+    color: black;
+    font-size: small;
+  }
   
 // Product
   .content-window {
@@ -255,6 +262,12 @@
   .price {
     color: grey;
     font-size: 22px;
+  }
+
+  .description-text {
+    background-color: #b6b6b631;
+    border-radius: 5%;
+    padding: 10px;
   }
   
 // SideBar

@@ -37,6 +37,7 @@ function createProducts(products: IProduct[]) {
         let category: HTMLParagraphElement = document.createElement("p");
         let description: HTMLParagraphElement = document.createElement("p");
         description.classList.add("description-text");
+        description.id = "my-description";
         let price: HTMLParagraphElement = document.createElement("p");
         price.classList.add("price");
         let button: HTMLButtonElement = document.createElement("button");
@@ -46,9 +47,10 @@ function createProducts(products: IProduct[]) {
 
         name.innerHTML = products[i].Name;
         image.innerHTML = `<img src="${products[i].Img}" alt="${products[i].Name}">`;
-        
-        category.innerHTML = products[i].Category;
+
+        category.innerHTML = '<button class="read-btn" id="read-btn" name="btn">Läs mer...</button>';
         description.innerHTML = products[i].Description;
+        description.style.display = "none";
         price.innerHTML = products[i].Price.toFixed(2) + " kr";
         button.innerHTML = "Lägg i varukorgen";
 

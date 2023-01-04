@@ -24,11 +24,11 @@ export let mockData: IProduct[] = [
     {
         Id: "3",
         Name: "Rödbetssallad",
-        Img: "https://static.mathem.se/shared/images/products/large/07313161311360_c1c1.jpg",
+        Img: "https://assets.icanet.se/t_product_large_v1,f_auto/7318690183594.jpg",
         Category: "Sallad",
         Price: 24.90,
         Quantity: 1,
-        Description: "En klassiker på köttbullsmörgåsen, gjord på gotländska rödbetor."
+        Description: "En klassiker gjord på gotländska rödbetor. Vegansk rödbetssallad är en vegansk variant på vår klassiska rödbetssallad. Majonnäsen i salladen är gjord utan ägg, helt enkelt."
     },
     {
         Id: "4",
