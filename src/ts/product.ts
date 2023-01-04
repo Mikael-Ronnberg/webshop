@@ -36,8 +36,7 @@ function createProducts(products: IProduct[]) {
         let name: HTMLHeadingElement = document.createElement("h4");
         let category: HTMLParagraphElement = document.createElement("p");
         let description: HTMLParagraphElement = document.createElement("p");
-        description.classList.add("description-text");
-        description.id = "my-description";
+        // description.id = "my-description";
         let price: HTMLParagraphElement = document.createElement("p");
         price.classList.add("price");
         let button: HTMLButtonElement = document.createElement("button");
@@ -48,17 +47,28 @@ function createProducts(products: IProduct[]) {
         name.innerHTML = products[i].Name;
         image.innerHTML = `<img src="${products[i].Img}" alt="${products[i].Name}">`;
 
-        category.innerHTML = '<button class="read-btn" id="read-btn" name="btn">Läs mer...</button>';
+        // category.innerHTML = `<button class="read-btn" id="read-btn" name="btn">Läs mer...</button>`;
         description.innerHTML = products[i].Description;
-        description.style.display = "none";
+        description.classList.add("description-pop");
         price.innerHTML = products[i].Price.toFixed(2) + " kr";
         button.innerHTML = "Lägg i varukorgen";
+        let readBtn: HTMLButtonElement = document.createElement("button");
+        readBtn.innerHTML = "Läs mer...";
+        readBtn.classList.add("read-btn");
+        readBtn.addEventListener("click", () => {
+            description.classList.toggle("description-pop");
+        })
+        // document.getElementById("read-btn")?.addEventListener("click", (e: Event) =>{
+        //     // description.classList.toggle("description-pop");
+        //     console.log(e.target);
+        // });
 
         aProduct.appendChild(name);
         aProduct.appendChild(image);
         aProduct.appendChild(price);
         aProduct.appendChild(category);
         aProduct.appendChild(description);
+        aProduct.appendChild(readBtn);
         aProduct.appendChild(button);
 
         (document.getElementById("product-container") as HTMLDivElement).appendChild(aProduct);
