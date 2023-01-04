@@ -36,6 +36,8 @@ function createProducts(products: IProduct[]) {
         let name: HTMLHeadingElement = document.createElement("h4");
         let category: HTMLParagraphElement = document.createElement("p");
         let description: HTMLParagraphElement = document.createElement("p");
+        description.classList.add("description-text");
+        description.classList.add("description-pop");
         // description.id = "my-description";
         let price: HTMLParagraphElement = document.createElement("p");
         price.classList.add("price");
@@ -49,7 +51,6 @@ function createProducts(products: IProduct[]) {
 
         // category.innerHTML = `<button class="read-btn" id="read-btn" name="btn">Läs mer...</button>`;
         description.innerHTML = products[i].Description;
-        description.classList.add("description-pop");
         price.innerHTML = products[i].Price.toFixed(2) + " kr";
         button.innerHTML = "Lägg i varukorgen";
         let readBtn: HTMLButtonElement = document.createElement("button");
@@ -57,6 +58,11 @@ function createProducts(products: IProduct[]) {
         readBtn.classList.add("read-btn");
         readBtn.addEventListener("click", () => {
             description.classList.toggle("description-pop");
+            //1.skapa div som innehåller texten Description
+            // let myDiv: HTMLDivElement = document.createElement("div");
+            // myDiv.innerHTML = products[i].Description;
+            //2.knapp som tar bort fönstret
+
         })
         // document.getElementById("read-btn")?.addEventListener("click", (e: Event) =>{
         //     // description.classList.toggle("description-pop");
