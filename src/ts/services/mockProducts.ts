@@ -14,17 +14,17 @@ export let mockData: IProduct[] = [
     },
     {
         Id: "2",
-        Name: "Julskinka",
-        Img: "https://www.amoi.se/_next/image?url=https%3A%2F%2Fassets.amoi.se%2Fv7%2F_prod_%2Fassets%2Fimages%2F4d8d9880-82b2-4214-91f3-889ad6f7fa4e.jpeg%3Fbr_px%3D3729%252C3729%26tl_px%3D0%252C0&w=1080&q=75",
+        Name: "saffranskyckling",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/460562056/4ac44c18-bd97-488f-898b-490d95960656.jpg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
         Category: "Kött",
         Price: 47.90,
         Quantity: 1,
-        Description: "Julskinka är ett måste på de flesta julbord. Ta hjälp av en digital termometer när du tillagar din julskinka i ugnen, så har du full koll på när den är klar. Sedan serverar du din ugnsbakade julskinka tillsammans med grovkornig senap och rödkål."
+        Description: "Kyckling marinerade med saffran, citron och chili är en smakrik rätt. Den är lätt att laga, då kycklingen sköter sig själv i ugnen. Serverad med kall sås, fluffig couscous och grönsallad."
     },
     {
         Id: "3",
         Name: "Rödbetssallad",
-        Img: "https://assets.icanet.se/t_product_large_v1,f_auto/7318690183594.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/3945250878/dcf0130f-53b4-4f29-99bb-41571f15ae83.jpg?crop=(0,14,0,-134)&w=1269&h=715&mode=crop&ak=f525e733&hm=b14f0270",
         Category: "Sallad",
         Price: 24.90,
         Quantity: 1,
@@ -33,7 +33,7 @@ export let mockData: IProduct[] = [
     {
         Id: "4",
         Name: "Frukt sallad",
-        Img: "https://assets.icanet.se/image/upload/w_712,ar_1.92405063291,c_fill/e_sharpen:80/f_auto,q_auto:best,dpr_2.0/imagevaultfiles/id_104671/cf_259/fruktsallad_med_saffransmascarpone.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/804631427/0995603c-dabd-4db1-a7a4-19f2cc2f8ebd.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Sallad",
         Price: 22.90,
         Quantity: 1,
@@ -41,17 +41,17 @@ export let mockData: IProduct[] = [
     },
     {
         Id: "5",
-        Name: "Ljummen kålsallad",
-        Img: "https://assets.icanet.se/image/upload/w_712,ar_1.92405063291,c_fill/e_sharpen:80/f_auto,q_auto:best,dpr_2.0/imagevaultfiles/id_151089/cf_259/ljummen_kalsallad_med_lingondressing_och_rostad_mandel.jpg",
+        Name: "Isad vintersallad",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2106122407/e5c30eb5-a76b-4c48-8667-6b7f08042ad2.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Sallad",
         Price: 21.90,
         Quantity: 1,
-        Description: "Två sorters kål, rödkål och brysselkål, är huvudingredienserna i denna vintriga sallad med lingondressing som garanterat gör succé på buffén. Rostad grovhackad mandel ger rätten en härlig krispighet"
+        Description: "Vintrig sallad som får sötma från päron och sälta från ädelost. För att få grönsakerna riktigt krispiga får de ligga i isvatten en stund."
     },
     {
         Id: "6",
         Name: "Prinskorv",
-        Img: "https://cdn.natmat.se/content/shopimages/large/6467-160094.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2678209135/db599bed-11ca-47a3-aa77-e30de01511cc.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Kött",
         Price: 40.90,
         Quantity: 1,       
@@ -60,7 +60,7 @@ export let mockData: IProduct[] = [
     {
         Id: "7",
         Name: "Köttbullar",
-        Img: "https://crockpot.se/wp-content/uploads/2021/04/kottbulla_web-640x480.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2925428190/45a9e46c-059d-4e11-a526-da878c68f919.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Kött",
         Price: 50.90,
         Quantity: 1,       
@@ -69,7 +69,7 @@ export let mockData: IProduct[] = [
     {
         Id: "8",
         Name: "Lucia Katter",
-        Img: "https://www.recepten.se/bilder/recept/2/main/l/lussekatter.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/4260873076/5e38aa03-f642-4417-be1c-b47e3767f869.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Sött",
         Price: 39.90,
         Quantity: 1,       
@@ -78,7 +78,7 @@ export let mockData: IProduct[] = [
     {
         Id: "9",
         Name: "Peppar Kakor",
-        Img: "https://res.cloudinary.com/coopsverige/image/upload/v1632490120/cloud/234240.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/4055953695/41f03d24-f785-4b5c-9964-c5fe79c15e9a.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Sött",
         Price: 29.90,
         Quantity: 1,       
@@ -86,26 +86,26 @@ export let mockData: IProduct[] = [
     },
     {
         Id: "10",
-        Name: "Snaps med julsmak",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_219593/cf_259/snaps_med_julsmak.jpg",
+        Name: "choklad med kanel",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/3362605072/1d2bba50-0c09-4016-8348-0a151a725c92.jpg?crop=(174,0,0,0)&w=1600&h=1078&mode=crop&ak=f525e733&hm=419ac45d   ",
         Category: "Dryck",
         Price: 39.90,
         Quantity: 1,       
-        Description: "Med detta recept kan du göra en härlig julsnaps med underbar smak. Snapsen är enkel att göra men spriten behöver få dra in kryddornas smak - ju längre tid din snaps får dra desto bättre! Servera din snaps med julsmak väl kyld."
+        Description: "En lyxvariant med extra allt - kakao, mjölkchoklad och kryddig kanel!"
     },
     {
         Id: "11",
-        Name: "Löksill med portvin",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_245023/cf_259/loksill_med_portvin.jpg",
+        Name: "Rimmad lax",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/1368655128/3b9fdd86-5049-4f50-9bbf-a4139777aed9.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Fisk",
         Price: 44.90,
         Quantity: 1,       
-        Description: "Lägg in sillen med en lag som fått smak av både portvin, kryddpeppar och nejlikor. I övrigt gör du en klassisk lag med ättika, socker och lök. Låt matjessillen får dra några dagar i den goda lagen och sedan smakar sillen väldigt gott."
+        Description: "Klassisk rimmad lax som du låter ligga i kylen ett dygn. Det enda du behöver är laxfilé, socker, salt och peppar. Rimmad lax passar utmärkt tillsammans potatisgratäng med dill, i en pasta eller på pizza. Ljuvligt gott!"
     },
     {
         Id: "12",
         Name: "Vegansk seitanskinka",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_190648/cf_259/vegansk_seitanskinka.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/91419656/b24c8bfa-6512-4fb7-a529-e4d37df4160c.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Vego",
         Price: 60.90,
         Quantity: 1,       
@@ -114,7 +114,7 @@ export let mockData: IProduct[] = [
     {
         Id: "13",
         Name: "Jullimpa",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_104524/cf_259/jullimpa.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/222439216/cc6cbe9e-eca4-496c-b79d-1f82c763b4ad.jpg?crop=(174,0,0,0)&w=1600&h=1078&mode=crop&ak=f525e733&hm=419ac45d",
         Category: "Bröd",
         Price: 29.90,
         Quantity: 1,       
@@ -123,7 +123,7 @@ export let mockData: IProduct[] = [
     {
         Id: "14",
         Name: "Jullandgång",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_244718/cf_259/jullandgang.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2176494787/0101e53f-96a4-4a86-8f4c-61056c6c13a9.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Kött",
         Price: 50.90,
         Quantity: 1,       
@@ -132,7 +132,7 @@ export let mockData: IProduct[] = [
     {
         Id: "15",
         Name: "Pepparkaksdeg",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_234174/cf_259/pepparkaksdeg%C2%A0.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/938501590/81fd2370-a047-4e68-a034-8d1a65e78ebd.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Sött",
         Price: 30.90,
         Quantity: 1,       
@@ -140,44 +140,44 @@ export let mockData: IProduct[] = [
     },
     {
         Id: "16",
-        Name: "Saffransbullar",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_221591/cf_259/saffransbullar_med_vanilj.jpg",
+        Name: "Saffransbollar",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/771150431/76f107d0-effe-4436-bdcf-e3d8485e1b4f.jpg?crop=(87,0,-87,0)&w=1600&h=1078&mode=crop&ak=f525e733&hm=6b611a91",
         Category: "Sött",
         Price: 34.90,
         Quantity: 1,       
-        Description: "Dessa saffransbullar med vanilj kan vara det godaste du någonsin kommer ha bakat. Vi bakar saffransbullarna med både smör och kvarg så de blir riktigt saftiga. Vanilj i fyllningen gör dem helt oemotståndliga. Snurra saffransbullarna i knutar och njut av dina gyllene underverk!"
+        Description: "Små söta saffransbollar med smak av kokos och vit choklad. Ett nytt inslag på julens godisbord. De är lätta att göra, se bara till att de får stelna ordentligt i kylen innan du börjar rulla smeten. Prova gärna att rosta kokosen för ännu mera smak!"
     },
     {
         Id: "17",
-        Name: "Saffransmums",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_244993/cf_259/saffransmums.jpg",
+        Name: "Saffransbullar",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2942892845/e5de99a3-7bee-4c5b-910b-ef441ec32321.jpg?w=1600&h=1078&mode=crop&ak=f525e733&hm=a6677d03",
         Category: "Sött",
         Price: 37.90,
         Quantity: 1,       
-        Description: "Extra fluffiga kärleksmums – i en klargul och ljuvligt saffransdoftande kostym! Missa inte detta recept på saftiga saffransmums med en fräsch och syrlig glasyr toppad med riven kokos."
+        Description: "Lyxiga saffransbullar fyllda med kardemumma och mandelmassa. Njut dem till lussefikat med kaffe eller ett glas mjölk. Mandelmassan gör lussebullarna extra saftiga och bidrar med den goda smaken."
     },
     {
         Id: "18",
-        Name: "Glöggmanhattan",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_28039/cf_259/gloggmanhattan.jpg",
+        Name: "Eggnog",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/3699355530/d03e5d29-96e8-4b84-ba29-4a9f2c42e50d.jpg?crop=(0,0,-174,0)&w=1600&h=1078&mode=crop&ak=f525e733&hm=89a077b1",
         Category: "Dryck",
         Price: 45.90,
         Quantity: 1,       
-        Description: "Glöggmanhattan, en glöggbaserad julversion av drinken Manhattan med whisky och angostura bitter som vänner till den söta glöggen. Drinken garneras innan servering med ett cocktailbär, gärna uppträtt på en avskalad grankvist"
+        Description: "Eggnog är en varm mjölkdryck som påminner om äggtoddy. Den vispas med äggula och socker och kan spetsas med sprit som rom, konjak eller calvados."
     },
     {
         Id: "19",
-        Name: "Pocherad torsk",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_207854/cf_259/pocherad_torsk_(grundrecept).jpg",
+        Name: "Laxsandwich",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2612727319/9f245d7f-73c2-4111-8e59-089a00006680.jpg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
         Category: "Fisk",
         Price: 30.90,
         Quantity: 1,       
-        Description: "Att pochera innebär att sjuda lätt. Här ett grundrecept på pocherad torsk som sedan kan användas till olika rätter: till en gryta, eller med tillbehör som kokt potatis eller potatispuré. Detta recept ingår i Söndagspreppen där du genom lite prepp förbereder grunden till fyra måltider."
+        Description: "Laxsandwich på danskt rågbröd, med kallrökt lax och syrlig kräm - en försvinnande god munsbit. Bjud på laxsandwich som tilltugg eller på buffébordet."
     },
     {
         Id: "20",
         Name: "Oumph!",
-        Img: "https://cdn.cafe.se/app/uploads/2016/01/oumph-chili.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/3837965794/5f982a14-4e29-4cdc-a611-6ae046cc4790.jpg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
         Category: "Vego",
         Price: 33.90,
         Quantity: 1,       
@@ -185,17 +185,17 @@ export let mockData: IProduct[] = [
     },
     {
         Id: "21",
-        Name: "Julbröd med frukt och nötter",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_221656/cf_259/julbrod_med_frukt_och_notter.jpg",
+        Name: "Filmjölkslimpa",
+        Img: "https://images.arla.com/recordid/19CBEB90-6C83-4C54-93EB3FDB2D6D26EC/filmjolkslimpa.jpg?width=1269&height=715&mode=crop&crop=(0,336,0,-1207)",
         Category: "Bröd",
         Price: 34.90,
         Quantity: 1,       
-        Description: "Ett riktigt gott julbröd med russin, aprikoser, valnötter och hasselnötter – allt som hör vintersäsongens smaker till! Receptet är enkelt att baka och passar såväl vana som ovana bagare."
+        Description: "Den här goda och kryddiga glutenfria filmjölkslimpan är kryddad med pomerans och nejlika. Njut av den alldeles nybakad med lagrad ost och färska grönsaker. Variera gärna kryddorna mot anis och fänkål!"
     },
     {
         Id: "22",
         Name: "Kycklinglårfilé",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_207364/cf_259/kycklinglarfil%C3%A9_med_apelsin__ingefara_och_valnotssas.jpg",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/4165627192/6e3a4e1e-9d13-478f-9eca-39917961c5d6.jpg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
         Category: "Kött",
         Price: 32.90,
         Quantity: 1,       
@@ -203,53 +203,53 @@ export let mockData: IProduct[] = [
     },
     {
         Id: "23",
-        Name: "jul bullar",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_63271/cf_259/julbullar.jpg",
+        Name: "jul bOllar",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2589245295/8cb02787-7c34-414b-9a87-0d4e52df752a.jpg?crop=(0,148,0,0)&w=1269&h=715&mode=crop&ak=f525e733&hm=60dfdfb6",
         Category: "Sött",
         Price: 37.90,
         Quantity: 1,       
-        Description: "Recept på fikabröd som passar perfekt till jul. Bullarna gör du av vanligt vetebrödsrecept och den färgglada och goda fyllningen gör du av smör, vaniljsocker, pepparkakskrydda och lingonsylt. Garnera julbullarna med pärlsocker."
+        Description: "Riktigt söta och smarriga är dessa vita chokladbollar smaksatta med vit choklad och brynt smör. Välj om du vill rulla dina vita chokladbollar i rostad kokos, hallonpulver eller florsocker. "
     },
     {
         Id: "24",
-        Name: "Glögg",
-        Img: "https://www.unbooze.se/wp-content/uploads/2022/11/infused-liquid-glogg-blabar.png",
+        Name: "Golden milk saffran",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/1666781529/50d270a5-2a69-4a90-8c17-98c590e490f2.jpg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
         Category: "Dryck",
         Price: 59.90,
         Quantity: 1,       
-        Description: "Glöggen har en tydlig blåbärssmak, lätt sötma och traditionell kryddning. Framtagen i samarbete med svenska producenter, med enbart svenska råvaror. Finns även med smak av äpple!"
+        Description: "Golden milk är mjölk med gurkmeja och färgen är ljust gul - här har vi dessutom adderat saffran. Toppa med vispad grädde och kolasås och du har julens gulaste, godaste shake."
     },
     {
         Id: "25",
-        Name: "Glögg",
-        Img: "https://www.unbooze.se/wp-content/uploads/2022/11/infused-liquid-glogg-apple.png",
+        Name: "Pumpkin latte",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2343415226/7536eddd-9895-4690-b9c9-57a4b4b37469.jpg?crop=(0,0,0,-148)&w=1269&h=715&mode=crop&ak=f525e733&hm=bd2594bd",
         Category: "Dryck",
         Price: 59.90,
         Quantity: 1,       
-        Description: "Glöggen har en tydlig äppelsmak, lätt sötma och traditionell kryddning. Framtagen i samarbete med svenska producenter, med enbart svenska råvaror. Finns även med smak av blåbär!"
+        Description: "Pumpkin spice latte är en kryddig och välsmakande kaffedryck som värmer gott under årets kalla månader. Starkt kaffe blandas med en kryddig pumpapuré och det hela toppas med lättvispad grädde och kanel. "
     },
     {
         Id: "26",
-        Name: "Alkoholfri sangria",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_244191/cf_259/alkoholfri_sangria.jpg",
+        Name: "Saffranslatte",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/3176626898/320da0d3-c805-40c0-9d7f-a4574b3dff28.jpg?crop=(0,0,0,-148)&w=1269&h=715&mode=crop&ak=f525e733&hm=bd2594bd",
         Category: "Dryck",
         Price: 59.90,
         Quantity: 1,       
-        Description: "Fräsch och frisk i smaken är denna sangria, som dessutom är alkoholfri. Tranbärsjuicen som får koka med kanelstång ger sangrian en kryddig smak. Skär tunna skivor av apelsin och äpple och blanda med juicerna. Kyl sangrian väl innan du serverar den och häll i läsk och is precis före servering."
+        Description: "En värmande och smakrik latte kryddad med saffran, kanel och kardemumma. Denna saffranslatte blir en en underbar start på julaftonsmorgonen.      "
     },
     {
         Id: "27",
-        Name: "Snabbgravad lax, grundrecept",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_111228/cf_259/snabbgravad_lax__grundrecept.jpg",
+        Name: "Lax med saffran",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/1373219126/de09c659-8bc2-4ab8-b910-ea8a7dab71a0.jpg?crop=(0,119,0,-29)&w=1269&h=715&mode=crop&ak=f525e733&hm=0c3cec8e",
         Category: "Fisk",
         Price: 50.90,
         Quantity: 1,       
-        Description: "Prova ett snabbt sätt att grava lax som både sparar tid och gör fisken saftigare. Fyra timmar är allt som krävs. Genom att låta laxen ligga i en ”gravningsmarinad” får den extra mycket smak, särskilt om du testar någon av de föreslagna smaksättarna."
+        Description: "Lax som kryddas med saffran och rosmarin blir underbart god. En lyxig lax som passar lika bra till vardags som till fest."
     },
     {
         Id: "28",
         Name: "Vego bullar",
-        Img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEkvX-XIzo8pSWzds2OI0DQ_30NZKIDJt3Ow&usqp=CAU",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/8488418/e8020839-2299-42e1-bbb2-1988ed863109.jpg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
         Category: "Vego",
         Price: 42.90,
         Quantity: 1,       
@@ -257,11 +257,11 @@ export let mockData: IProduct[] = [
     },
     {
         Id: "29",
-        Name: "Juligt fröknäcke",
-        Img: "https://assets.icanet.se/e_sharpen:80,q_auto,dpr_1.25,w_718,h_718,c_lfill/imagevaultfiles/id_222434/cf_259/juligt_froknacke.jpg",
+        Name: "Fröigt knäckebröd",
+        Img: "https://cdn-rdb.arla.com/Files/arla-se/2127713457/5de55126-883a-444c-8c40-0e67d7f7376d.jpg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
         Category: "Bröd",
         Price: 43.90,
         Quantity: 1,       
-        Description: "Gör eget glutenfritt fröknäcke till jul, utan majsmjöl och med juliga smaker av ingefära och kanel. Lika gott att servera med en bit julskinka som en skiva vällagrad ost. Att bjuda på hembakt knäckebröd brukar ge en och annan pluspoäng, dessutom är det superlätt att göra."
+        Description: "Hemlagat, kryddigt knäckebröd med många olika fröer är läckert att bjuda på. Servera till sill eller till frukost med en god ost."
     },
 ];
