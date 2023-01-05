@@ -135,6 +135,15 @@
     margin: 16px 0;
     font-size: x-large;
   }
+      //footer
+      .footer-container {
+        flex-direction: column;
+        gap:0;
+        height: 400px;
+        ul {
+          width: 100%;
+        }
+      }
 }
 
 /************** Desktop ***************/
@@ -398,3 +407,4 @@ button:hover {
     }
   }
 }
+;

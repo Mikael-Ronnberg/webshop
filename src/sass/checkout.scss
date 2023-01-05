@@ -323,3 +323,18 @@ input {
       border-right: 5px solid grey;
     }
   }
+
+
+
+  /***************** Mobile first *****************/
+@media (max-width: 768px) {
+        //footer
+        .footer-container {
+          flex-direction: column;
+          gap:0;
+          height: 400px;
+          ul {
+            width: 100%;
+          }
+
+  }};
