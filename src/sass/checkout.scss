@@ -160,7 +160,7 @@ input {
         h2 {
             display: block;
             font-size: 5rem;
-            margin-bottom: 5rem;
+            margin: 4rem 0;
         }
 
     }
@@ -185,7 +185,7 @@ input {
 #cart-summerize {
     display: flex;
     height: 40vh;
-    width: 50vw;
+    width: 55vw;
     overflow: scroll;
     flex-direction: column;
     justify-content: space-between;
@@ -201,7 +201,9 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem;
+    padding: 0;
+    background-color: #bababa;
+    // margin: 2rem;
     button {
         font-size: 1.5rem;
         width: 2rem;
@@ -213,10 +215,10 @@ input {
 
 .cart-object {
     margin: 1.5rem;
-    width: 50rem;
-    height: 5rem;
+    width: 45rem;
+    height: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: inherit;
     padding: .5em;
     p {
       padding: 1em;
@@ -243,6 +245,8 @@ input {
     background-color: #b6b6b6;
     display: flex;
     justify-content: flex-end;
+    height: 130px;
+    align-items: center;
     li {
         list-style: none;
         margin: 10px;
