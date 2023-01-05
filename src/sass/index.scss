@@ -1,184 +1,188 @@
 /***************** Hela startsidan *****************/
 * {
-    list-style: none;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /***************** Mobile first *****************/
 @media (max-width: 768px) {
-    .links-content {
-       display: grid;
-       position: absolute;
-       background: #d9bbadaa;
-       right: 0px;
-       width: 180px;
-       height: 400px;
-       margin-top: 20px;
-       // margin-top: 60px;
-       transform: translateY(-200%);
-       transition: .6s;
-       align-items: center;
-       justify-items: center;
-       overflow-x: hidden;
-       padding: 15% 30%;
-   }
-   
-   .links-content li {
-       padding-left: 20px;
-       position: relative;
-   }
-   
-   nav .navbar-toggler {
-       display: grid !important;
-   }
-   
-   nav .navbar-toggler {
-   display: none;
-   height: min-content;
-   margin-top: 15px;
-   cursor: pointer;
-   }
-   
-   nav .navbar-toggler .bar {
-   width: 40px;
-   height: 5px;
-   margin-bottom: 10px;
-   background: white;
-   border-radius: 10%;
-   transition: .4s;
-   }
-   
-   input:checked ~ nav .links-content {
-   transform: translateY(0);
-   }
-   
-   input:checked ~ nav .navbar-toggler {
-   margin-top: 15px;
-   }
-   
-   input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-   position: absolute;
-   transform: rotate(45deg);
-   }
-   
-   input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-   display: none;
-   }
-   
-   input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-   transform: rotate(-45deg);
-   }
-   }
+  .links-content {
+    display: grid;
+    position: absolute;
+    background: #d9bbadaa;
+    right: 0px;
+    width: 180px;
+    height: 400px;
+    margin-top: 20px;
+    // margin-top: 60px;
+    transform: translateY(-200%);
+    transition: 0.6s;
+    align-items: center;
+    justify-items: center;
+    overflow-x: hidden;
+    padding: 15% 30%;
+  }
+
+  .links-content li {
+    padding-left: 20px;
+    position: relative;
+  }
+
+  nav .navbar-toggler {
+    display: grid !important;
+  }
+
+  nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  nav .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 10%;
+    transition: 0.4s;
+  }
+
+  input:checked ~ nav .links-content {
+    transform: translateY(0);
+  }
+
+  input:checked ~ nav .navbar-toggler {
+    margin-top: 15px;
+  }
+
+  input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+  }
+
+  input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}
 
 /***************** Desktop *****************/
 
 // Header
 .tree-logo {
-    padding: 0px 10px;
+  padding: 0px 10px;
 }
 
 #logo-name {
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    margin: 0%;
-    padding-left: 5%;
-    text-align: center;
+  a {
     color: white;
-    text-shadow:
-        3px 3px 0 #666,
+    text-decoration: none;
+  }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin: 0%;
+  padding-left: 5%;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 0 #666;
 }
 
 // Navbar
 nav {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: #d9bbad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #d9bbad;
 }
 
 input {
-    display: none;
+  display: none;
 }
 
 .links-content {
-     a {
+  a {
     text-decoration: none;
     color: white;
     font-size: large;
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     border-radius: 20px;
-    text-shadow: 1px 1px 0 black,
-    }
-    a:hover {
+    text-shadow: 1px 1px 0 black;
+  }
+  a:hover {
     background-color: #8e7b72;
     transition: background-color 0.8s ease;
-    }
+  }
 }
 
 // Main
 main {
-    background-image: url("https://via.tt.se/data/images/00964/78026133-c1e5-4a1b-8aaf-174ef2b509de-w_960.jpg");
-    background-color: #cccccc;
-    height: 92vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("https://via.tt.se/data/images/00964/78026133-c1e5-4a1b-8aaf-174ef2b509de-w_960.jpg");
+  background-color: #cccccc;
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img-text {
-    display: flex;
-    justify-content: center;
-    padding-top: 320px;
-    h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0%;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.404);
-        font-size: 30pt;
-        color: white;
-        text-shadow:
-        2px 2px 0 #666,
-    }
+  display: flex;
+  justify-content: center;
+  padding-top: 320px;
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.404);
+    font-size: 30pt;
+    color: white;
+    text-shadow: 2px 2px 0 #666;
+  }
 }
 
 // Footer
 .footer-container {
-    background-color: #b6b6b6;
-    display: flex;
-    justify-content: flex-end;
+  height: 30vh;
+  margin: rem;
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  justify-content: center;
+
+  ul {
     li {
-        list-style: none;
-        margin: 10px;
+      list-style: none;
+      margin: 10px;
     }
     a {
-        text-decoration: none;
-        list-style-type: none;
-        font-weight: bold;
-        color: black;
-        padding: 5px;
-        border-radius: 5px;
-       }
-       a:hover {
-        background-color: #f9f9f985;
-        transition: background-color 0.8s ease;
-       }
+      text-decoration: none;
+      list-style-type: none;
+      font-weight: bold;
+      color: black;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: #f9f9f985;
+      transition: background-color 0.8s ease;
+    }
+    border-left: 5px solid color.$primary;
+    border-right: 5px solid color.$primary;
+  }
 }
 
-
 @media (min-width: 768px) {
-    .links-content {
-        display: flex;
-        flex-direction: row;
-    }
-
+  .links-content {
+    display: flex;
+    flex-direction: row;
+  }
 }
